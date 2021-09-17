@@ -11,7 +11,7 @@ create table cema_user
 	password varchar(200) not null,
 	role varchar(50) not null,
 	creation_date date default now(),
-	establishment_cuig varchar(50)
+	establishment_cuig varchar(50) not null
 );
 
 alter table cema_user owner to users;

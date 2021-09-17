@@ -7,7 +7,7 @@ create table cema_bovine
 	tag varchar(20) not null,
 	description varchar(250),
 	genre varchar(10) not null,
-	establishment_cuig varchar(50)
+	establishment_cuig varchar(50) not null
 );
 
 alter table cema_bovine owner to bovine;

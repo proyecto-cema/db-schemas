@@ -4,7 +4,7 @@ create table batch
 		constraint batch_pkey
 			primary key,
 	batch_name varchar(50) not null,
-	establishment_cuig varchar(50),
+	establishment_cuig varchar(50) not null,
 	description varchar(500),
 	creation_date date default now() not null
 );
