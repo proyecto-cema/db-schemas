@@ -6,7 +6,6 @@ create table weighing
 	dental_notes varchar(250),
 	description varchar(250),
 	name varchar(50) not null,
-	description varchar(250),
 	execution_date date default now(),
 	establishment_cuig varchar(50) not null,
 	bovine_tag varchar(50) not null
