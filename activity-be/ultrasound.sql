@@ -1,9 +1,8 @@
-create table weighing
+create table ultrasound
 (
 	id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
-	category varchar(50),
-	weight bigint,
-	dental_notes varchar(250),
+	service_number varchar(50),
+	result_status varchar(50),
 	description varchar(250),
 	name varchar(50) not null,
 	execution_date date default now(),
@@ -11,4 +10,4 @@ create table weighing
 	bovine_tag varchar(50) not null
 );
 
-alter table weighing owner to activity;
+alter table ultrasound owner to activity;
