@@ -4,6 +4,7 @@ create table note
 		constraint note_pkey
 			primary key,
 	content varchar not null,
+	creation_date timestamp default now(),
 	illness_id uuid not null
 		constraint note_illness_id_fkey
 			references illness

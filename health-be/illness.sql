@@ -13,7 +13,7 @@ create table illness
 		constraint illness_pkey
 			primary key,
 	starting_date timestamp default now(),
-	ending_date timestamp default now(),
+	ending_date timestamp,
 	bovine_tag varchar(20) not null,
 	establishment_cuig varchar(50) not null,
 	disease_id integer not null
