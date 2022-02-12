@@ -1,4 +1,4 @@
-create table operation
+create table bovine_operation
 (
 	id uuid default gen_random_uuid() not null
 		constraint operation_pkey
@@ -14,4 +14,4 @@ create table operation
 	establishment_cuig varchar(50) not null
 );
 
-alter table operation owner to economic;
+alter table bovine_operation owner to economic;
