@@ -6,9 +6,11 @@ create table supply
 	name varchar(20),
 	units varchar(50),
 	price bigint,
-	category_name varchar(20) not null,
-	establishment_cuig varchar(50) not null,
-	CONSTRAINT fk_location_id FOREIGN KEY(category_name) REFERENCES category(name)
+	category_name varchar(20) not null
+		constraint fk_location_id
+			references category,
+	establishment_cuig varchar(50) not null
 );
 
 alter table supply owner to economic;
+
