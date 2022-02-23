@@ -16,6 +16,7 @@ create table illness
 	ending_date timestamp,
 	bovine_tag varchar(20) not null,
 	establishment_cuig varchar(50) not null,
+	worker_username varchar(50),
 	disease_id integer not null
 		constraint illness_disease_id_fkey
 			references disease
