@@ -20,7 +20,8 @@ create table inoculation
 	execution_date date default now(),
 	establishment_cuig varchar(50) not null,
 	batch_name varchar(50),
-	bovine_tag varchar(50)
+	bovine_tag varchar(50),
+	worker_username varchar(50)
 );
 
 alter table inoculation owner to activity;

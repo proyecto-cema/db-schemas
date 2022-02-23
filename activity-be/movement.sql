@@ -18,6 +18,7 @@ create table movement
 	batch_name varchar(50),
 	bovine_tag varchar(50),
 	location_id uuid,
+	worker_username varchar(50),
 	CONSTRAINT fk_location_id FOREIGN KEY(location_id) REFERENCES location(id)
 );
 
